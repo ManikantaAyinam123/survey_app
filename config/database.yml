@@ -21,4 +21,4 @@ production:
   <<: *default
   database: survey_demo_production
   username: manikanta
-  password: <%= ENV["SURVEY_DEMO_APP_DATABASE_PASSWORD"] %>
+  password: <%= ENV["SURVEY_DEMO_DATABASE_PASSWORD"] %>
