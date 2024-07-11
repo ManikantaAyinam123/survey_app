@@ -22,7 +22,7 @@ gem 'will_paginate'
 gem 'cancancan'
   gem 'webpacker'
   gem 'foreman'
-
+gem 'dotenv-rails', groups: [:development, :test]
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
