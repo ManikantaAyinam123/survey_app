@@ -24,18 +24,6 @@ class VotersController < ApplicationController
   }
   end
 
-
-  # def index 
-    
-  #   query = params[:voter_name]
-
-  # if query
-  #   @voters = Voter.search_published(query)
-    
-  #   render json: @voters
-  # end
-  # end
-
   def search_by_name
   booth_name = params[:booth_name]
   voter_name = params[:voter_name]
@@ -73,29 +61,6 @@ end
   rescue ActiveRecord::RecordNotFound
     render json: { error: "Voter not found" }, status: :not_found
   end
-
-# def search_by_name
-#   voter_name = params[:voter_name]
-  
-#    if voter_name.blank?
-#     render json: { error: "Please provide a 'voter_name' parameter." }, status: :bad_request
-#     return
-#   end
-  
-#   voters = Voter.all
-
-#   if params[:constituency].present?
-#     voters = voters.where(constituency: params[:constituency])
-#   end
-
-#   if params[:booth_name].present? 
-#     voters = voters.where(booth_name: params[:booth_name])
-#   end
-
-#   voters = voters.where("voter_name ILIKE ?", "%#{voter_name}%")
-#   render json: voters
-# end
-
 
 
   def search_by_constituency
