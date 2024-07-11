@@ -1,7 +1,3 @@
-<<<<<<< HEAD
 web: bundle exec rails s -p 157.245.102.123/3000
-=======
-web: bundle exec rails s -b 157.245.102.123
->>>>>>> 8dd8762fbaf49db13ec49b7bdaaf4ee3a7f9fc22
 webpack: bin/webpack-dev-server
 sudo systemctl start elasticsearch
