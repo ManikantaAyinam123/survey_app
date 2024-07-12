@@ -1,4 +1,4 @@
 web: bundle exec rails s -b 157.245.102.123
 webpack: bin/webpack-dev-server
-sudo systemctl start elasticsearch
+
 
