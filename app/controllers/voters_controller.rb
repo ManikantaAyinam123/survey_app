@@ -122,7 +122,7 @@ end
 
 
 def import_file
-    binding.pry
+    
   file = params[:dump][:file]
   if file.present? && file.content_type == "application/vnd.ms-excel"
     xls = Roo::Excel.new(file.path)
