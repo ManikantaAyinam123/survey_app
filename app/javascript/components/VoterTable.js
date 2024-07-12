@@ -21,6 +21,7 @@ const VoterTable = ({ voters }) => {
     mobile_No: '',
     booth_name: '',
     casted: false,
+    party: '',
     figured_by: ''
   });
 
@@ -44,8 +45,8 @@ const VoterTable = ({ voters }) => {
 
   const handleSubmit = () => {
     const figuredBy = localStorage.getItem('name');
-    const { voter_name, age, gender, house_number, mobile_No, booth_name, casted, figured_by } = formData;
-    const updatedFields = { voter_name, age, gender, house_number, mobile_No, booth_name, casted, figured_by: figuredBy };
+    const { voter_name, age, gender, house_number, mobile_No, booth_name, casted,party, figured_by } = formData;
+    const updatedFields = { voter_name, age, gender, house_number, mobile_No, booth_name, casted,party, figured_by: figuredBy };
 
     dispatch(updateVoterAction(selectedVoter.id, { voter: updatedFields }));
     setOpen(false);
