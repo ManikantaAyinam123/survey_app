@@ -84,6 +84,7 @@ const VoterTable = ({ voters }) => {
               <TableCell sx={{fontWeight:'bold',color:'white'}}>Mobile No</TableCell>
               <TableCell sx={{fontWeight:'bold',color:'white'}}>Booth Name</TableCell>
               <TableCell sx={{fontWeight:'bold',color:'white'}}>Casted</TableCell>
+               <TableCell sx={{fontWeight:'bold',color:'white'}}>Party</TableCell>
               <TableCell sx={{fontWeight:'bold',color:'white'}}>Figured By</TableCell>
               {userType === 'volunteer' && <TableCell sx={{fontWeight:'bold',color:'white'}}>Action </TableCell>} 
             </TableRow>
@@ -99,6 +100,7 @@ const VoterTable = ({ voters }) => {
                 <TableCell>{voter.mobile_number}</TableCell>
                 <TableCell>{voter.booth_name}</TableCell>
                 <TableCell>{voter.casted ? "Yes" : "No"}</TableCell>
+                <TableCell>{voter.party}</TableCell>
                 <TableCell>{voter.figured_by}</TableCell>
                 {userType === 'volunteer' && (
                   <TableCell>
